@@ -55,12 +55,16 @@ function Circle:collide(other)
 end
 
 function Circle:BOING()
-	self.rv = 5
+	self.rv = 30
 end
 
 function Circle:update_BOING()
 	
-	self.rv = self.rv + (self.rv / 2 - 20) * 2.5
-	self.dr = self.dr + self.rv
+	local next_x = -10 * (self.dr - self.r)
+	local dampening = -0.6 * self.rv
+	
+	local acceleration = self.rv + (next_x + dampening) / 0.4
+	self.rv = self.rv + acceleration / 10
+	self.dr = self.dr + self.rv / 10
 	
 end
