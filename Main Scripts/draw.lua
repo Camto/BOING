@@ -5,8 +5,8 @@ function love.draw() -- Render the game.
 	
 	player:draw()
 	
-	for index, value in ipairs(bouncers) do
-		value:draw()
+	for count, bouncer in ipairs(bouncers) do
+		bouncer:draw()
 	end
 	
 	love.graphics.setColor(24, 131, 215)

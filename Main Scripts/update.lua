@@ -1,7 +1,9 @@
 function love.update() -- UPDATE ALL THE OBJECTS!!!
 	
-	for index, value in ipairs(bouncers) do
-		value:update()
+	player:update()
+	
+	for count, bouncer in ipairs(bouncers) do
+		bouncer:update()
 	end
 	
 end

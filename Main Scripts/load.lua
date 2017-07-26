@@ -12,6 +12,4 @@ function love.load() -- It should be called init but whatever. It won't do any h
 	player = Player:new()
 	bouncers = {Bouncer:new(200, 50, 60), Bouncer:new(50, 200, 60), Bouncer:new(200, 350, 60), Bouncer:new(350, 200, 60), Bouncer:new(200, -750, 800), Bouncer:new(-750, 200, 800), Bouncer:new(200, 1150, 800), Bouncer:new(1150, 200, 800)}
 	
-	bouncers[1]:BOING()
-	
 end

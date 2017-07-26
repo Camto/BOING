@@ -55,7 +55,7 @@ function Circle:collide(other)
 end
 
 function Circle:BOING()
-	self.rv = 30
+	self.rv = 50
 end
 
 function Circle:update_BOING()
